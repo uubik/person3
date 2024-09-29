@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视觉作品</title>
+    <link rel="stylesheet" href="https://uubik.github.io/person3/css/shijue.css">
+</head>
+<body>
+    <ul class="box">
+        <li class="active"><img src="./imge/zuopi1.png" alt=""></li>
+        <li><img src="./imge/zuopi2.gif" alt=""></li>
+        <li><img src="./imge/zuopi2.gif" alt=""></li>
+        <li><img src="./imge/zuopi3.jpeg" alt=""></li>
+        <li><img src="./imge/zuopi4.gif" alt=""></li>
+        <li><img src="./imge/zuopi5.jpeg" alt=""></li>
+    </ul>
+    <ul class="header">
+        <li class="active">111111</li>
+        <li>2222222</li>
+        <li>33333333</li>
+        <li>44444444</li>
+        <li>55555555</li>
+        <li>66666666</li>
+    </ul>
+    <script>
+        var oHeaderItems = document.querySelectorAll(".header li")
+        var oboxItems = document.querySelectorAll(".box li")
+        for (var i=0;i<oHeaderItems.length;i++){
+            //1.自定义属性加上索引
+            oHeaderItems[i].dataset.index = i
+            oHeaderItems[i].onclick = handler
+        }
+        //2.获取自身属性,用this获取全局变量，不要直接用i
+        function handler(){
+            // console.log(this.dataset.index)
+            var index = this.dataset.index
+            for(var m=0;m<oHeaderItems.length;m++){
+                oHeaderItems[m].classList.remove("active")
+                oboxItems[m].classList.remove("active")
+            }
+            oHeaderItems[index].classList.add("active")
+            oboxItems[index].classList.add("active")
+        }
+    </script>
+</body>
+</html>

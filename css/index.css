@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+}
+
+@font-face {
+    font-family: ALIMAMA_SHUHEITI_BOLD;
+    src: url(font/ALIMAMA_SHUHEITI_BOLD.TTF);
+}
+
+@font-face {
+    font-family: MiSans-Bold;
+    src: url(/font/MiSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: MiSans-Demibold;
+    src: url(/font/MiSans-Demibold.ttf);
+}
+
+@font-face {
+    font-family: MiSans-ExtraLight;
+    src: url(/font/MiSans-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: MiSans-Heavy;
+    src: url(/font/MiSans-Heavy.ttf);
+}
+
+@font-face {
+    font-family: MiSans-Light;
+    src: url(/font/MiSans-Light.ttf);
+}
+
+@font-face {
+    font-family: MiSans-Medium;
+    src: url(/font/MiSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: MiSans-Normal;
+    src: url(/font/MiSans-Normal.ttf);
+}
+
+@font-face {
+    font-family: MiSans-Regular;
+    src: url(/font/MiSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: MiSans-Semibold;
+    src: url(/font/MiSans-Semibold.ttf);
+}
+
+@font-face {
+    font-family: MiSans-Thin;
+    src: url(/font/MiSans-Thin.ttf);
+}
+
+ul{
+    list-style: none;
+}
+
+body {
+    background-image: url('../imge/shouye.png'); 
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 100%;
+}
+
+.gongneng{
+    width: 408px;
+    height: 371px;
+    /* background: black; */
+    position: fixed;
+    top: 400px;
+    right: 225px;
+    /* bottom: 197px; */
+    background-size:cover;
+}
+
+.gongneng ul{
+    display: flex;
+    width: 408px;
+    height: 371px;
+    /* box-sizing: border-box; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.gongneng ul li{
+    width: 195px;
+    height: 179px;
+    background: #88abfc;
+    border-radius: 20px;
+    font-family:  MiSans-Heavy;
+    font-size: 58px;
+    text-align: center;
+    line-height: 89.5px;
+}
+
+.gongneng ul li:hover{
+    background: #125afa;
+    cursor: pointer;
+}
+
+.xinxi{
+    width: 540px;
+    height: 52px;
+    background: #88abfc;
+    position: fixed;
+    right: 160px;
+    bottom: 63px;
+    line-height: 52px;
+    font-size: 26px;
+    display: flex;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+.xinxi img{
+    height: 25px;
+    width: 35px;
+    margin-left: 19px;
+    margin-top: 14px;
+}
+
+.xinxi span{
+    margin-left: 10px;
+    font-family: MiSans-Bold;
+    letter-spacing: 2px;
+}

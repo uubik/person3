@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小游作品网</title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="./routes/server.js">
+    <link rel="stylesheet" href="./routes/User.js">
+</head>
+<body>
+    <div class="container" id="container1">
+        <div class="header">
+            <h1>登录</h1>
+        </div>
+        <div class="main">
+            <!-- <form action=""> -->
+                <span>
+                    <i class="iconfont icon-geren"></i>
+                    <input type="text" placeholder="手机号/邮箱" id="num1">
+                </span><br>
+                <span>
+                    <i class="iconfont icon-mima"></i>
+                    <input type="password" placeholder="密码" id="password">
+                </span><br>
+                <button style="margin-bottom: 1px;" >登录</button><br>
+                没有账号? 请注册
+                <button class="zhuc">注册</button>
+            <!-- </form> -->
+        </div>
+    </div>
+    <div class="container " id="container2">
+        <div class="header">
+            <h1>注册</h1>
+        </div>
+        <div class="main">
+            <!-- <form action=""> -->
+                <span>
+                    <i class="iconfont icon-geren"></i>
+                    <input type="text" placeholder="姓名" id="name">
+                </span><br>
+                <span>
+                    <i class="iconfont icon-geren"></i>
+                    <input type="text" placeholder="手机号/邮箱" id="num">
+                </span><br>
+                <span>
+                    <i class="iconfont icon-mima"></i>
+                    <input type="password" placeholder="密码" id="pass">
+                </span><br>
+                <span>
+                    <i class="iconfont icon-mima"></i>
+                    <input type="password" placeholder="确认密码" id="pass_again">
+                </span><br>
+                <button id="reg_btn">登录</button><br>
+            <!-- </form> -->
+        </div>
+    </div>
+    <script>
+        let contain1 = document.getElementById("container1")
+        let contain2 = document.getElementById("container2")
+        let zhuce = document.getElementsByClassName("zhuc")[0]
+        contain2.style.display = "none";
+        zhuce.addEventListener("click",()=>{
+            contain1.style.display = "none";
+            contain2.style.display = "block";
+
+        })
+        
+
+    </script>
+</body>
+</html>
